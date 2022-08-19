@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--bodyBackground);
+    color: var(--color);
+}
+.navCon {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 7%);
+    align-items: center;
+    background-color: var(--navBackground);
+}
+.nav {
+    font-weight: 700;
+}
+.navNav {
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.filter {
+    display: flex;
+    padding: 30px 50px;
+    justify-content: space-between;
+}
+.search {
+    position: relative;
+}
+.search div,.search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.search input {
+    z-index: 1;
+    border: none;
+    padding: 10px 5px;
+    background-color: var(--navBackground);
+    padding-left: 80px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 7%);
+}
+.search div {
+    z-index: 2;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+::placeholder {
+    color: var(--color);
+}
+.select {
+    background-color: var(--navBackground);
+    width: 200px;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 7%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-container {
+    min-height: 65vh !important;
+    padding: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+    min-width: 250px;
+    padding: 20px 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.span {
+    font-weight: 700;
 }
-
-.App-link {
-  color: #61dafb;
+.flag {
+    height: 150px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loader{
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+@media screen and (max-width:450px){
+    .filter {
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 40px;
+    }
+    .search input{
+        width: 300px;
+    }
+    .search div,.search input {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .search {
+        position: relative;
+    }
+    .select {
+        width: 100px;
+        position: absolute;
+        top: 180px;
+    }
+    .navCon {
+        padding: 30px 20px;
+        font-size: 1rem;
+    }
+    .navNav {
+        font-size: 1rem;
+    }
+} 

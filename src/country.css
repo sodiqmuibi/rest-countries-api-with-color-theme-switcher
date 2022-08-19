@@ -1,0 +1,55 @@
+.backButton {
+    margin: 20px 50px;
+    background-color: var(--navBackground);
+    color: var(--color);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 7%);
+}
+.country {
+    padding: 50px;
+}
+.flag img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.col1 {
+    margin: 20px 0;
+}
+.col2 {
+    margin: 20px 0;
+}
+.name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 30px 0;
+}
+.bold {
+    font-weight: 600;
+}
+.properties div {
+    margin: 10px 0;
+}
+.borderCountries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.borderList {
+    background-color: var(--navBackground);
+    color: var(--color);
+    border-radius: 8px;
+    padding: 3px 15px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 7%);
+}
+@media (min-width: 992px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+    .backButton {
+        margin: 50px;
+    }
+}
