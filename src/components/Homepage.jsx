@@ -5,7 +5,7 @@ import Countries from "./Countries"
 const Homepage = (props) => {
     return (
         <div className='body'>
-            <Navbar clicked = {props.click}/>
+            <Navbar clicked = {props.click} darkTheme={props.darkTheme}/>
             <Countries />
         </div>
     )

@@ -5,7 +5,7 @@ const Navbar = (props) => (
             Where in the world?
         </div>
         <div className="navNav" onClick={props.clicked}>
-            <BulbOutlined /> Dark Mode
+            <BulbOutlined /> {props.darkTheme ? 'Dark Mode' : 'Light Mode'}
         </div>
     </div>
 )
